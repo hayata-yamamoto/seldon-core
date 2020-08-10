@@ -11,7 +11,7 @@ with open(os.path.join(dir_path, "seldon_core/version.py")) as fp:
 extras = {
     "tensorflow": ["tensorflow"],
     "gcs": ["google-cloud-storage >= 1.16.0"],
-    "azure": ["azure-storage-blob >= 2.0.1, < 3.0.0"],
+    "azure": ["azure-storage-blob >= 2.0.1, < 13.0.0"],
 }
 all_extra_deps = chain.from_iterable(extras.values())
 extras["all"] = list(set(all_extra_deps))
